@@ -4,7 +4,7 @@ function Sidebar() {
     const {data : session , status} = useSession();
     console.log(session);
     return (
-        <div className=" text-gray-500 p-5 border-r border-gray-500 text-sm">
+        <div className=" text-gray-500 p-5 border-r border-gray-500 text-sm overflow-y-scroll h-screen">
             <div className="space-y-4">
             <button onClick={()=>signOut()} className="flex space-x-2 items-center hover:text-white">              
                 <p>Logout</p>
